@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Lab 2 - Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Meeting notes for team">
+    <link rel="icon" href="/pixel crest.png" type="image/x-icon">
+  </head>
+  <body>
+    <header>
+        <h1>Team 2073 Meeting Notes</h1>
+        <p>Week 4 brainstorming and planning</p>
+    </header>
+    <nav>
+        <h3>Navigation:</h3>
+        <ul>
+            <li><a href="#agenda">Agenda</a></li>
+            <li><a href="#mechanical">Mechanical</a></li>
+            <li><a href="#programming">Programming</a></li>
+            <li><a href="#business">Business</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Review week 0 competition robot performance</li>
+                <li>Go over mechanical progress and discuss blockers</li>
+                <li>Discuss what Programming team needs to get started on testing</li>
+                <li>Take a look at budget and plan outreach event</li>
+            </ol>
+            <div class="review-video">
+                <details>
+                    <summary>Week 0 Finals 2</summary>
+                    <video controls width="400">
+                        <source src="Week 0.mp4" type="video/mp4">
+                    </video>
+                </details>
+            </div>
+        </section>
+        <hr>
+        <section id="mechanical">
+            <h2>Mechanical</h2>
+            <ul>
+                <li>
+                    <p>Finished work on shooter and have begun stress testing it</p>
+                </li>
+                <li>
+                    <p>Working on redesign of <i>CADD</i> for hopper/intermediate systems</p>
+                    <img src="whiteboard.jpg" width="500" alt="Whiteboard diagram of hopper/intermediate system redesign">
+                </li>
+                <li>
+                    <p>Having issues with the manufacturing of the climber<br><strong>Might have to end up scrapping it</strong></p>
+                </li>
+            </ul>
+        </section>
+        <hr>
+        <section id="programming">
+            <h2>Programming</h2>
+            <ul>
+                <li>
+                    <p>Finished base code model for known mechanisms</p>
+                </li>
+                <li>
+                    <p><span>Working simulations for all such models as well</span><br>Want to start testing code on physical components</p>
+                </li>
+                <li>Predicting a total time of <em>1.5</em> weeks for full testing</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="business">
+            <h2>Business</h2>
+            <ul>
+                <li>
+                    <p>Got approved for a new grant of <b>$15,000</b></p>
+                </li>
+                <li>
+                    <p>Budget falling to below 30% of original plan</p>
+                </li>
+            </ul>
+            <h3>Event Plan:</h3>
+            <ol>
+                <li>
+                    <p>Perform Demo for students</p>
+                </li>
+                <li>
+                    <p>Teach about core robotics values</p>
+                </li>
+                <li>
+                    <p>Let students use vex robots to play and learn</p>
+                </li>
+            </ol>
+        </section>
+
+    </main>
+    <footer>  
+        <h3>Meeting Audio</h3> 
+        <audio controls>
+            <source src="Record (online-voice-recorder.com).mp3" type="audio/mpeg">
+        </audio>
+        <p>Meeting notes taken by Matthew Beaudin</p>     
+    </footer>
+    <form action="#">
+        <h3>Test Comp Attendence Form</h3>
+        <label for="name">Your name</label>
+        <datalist id="names">
+            <option value="Matthew">
+            <option value="Andy">
+            <option value="Joe">
+            <option value="John">
+            <option value="Kyle">
+        </datalist>
+        <input type="text" list="names" id="name" name="name">
+        <br>
+        <label for="date">Date of completion</label>
+        <input type="date" id="date" name="date">
+        <br>
+        <label for="attending">Attending this competition</label>
+        <input type="checkbox" id="attending" name="attending">
+        <br>
+        <label for="team-role">Role on team</label>
+        <select id="team-role">
+            <option value="mechanical">Mechanical</option>
+            <option value="programming">Programming</option>
+            <option value="business">Business</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Role at comp</legend>
+            <input type="radio" name="role" id="pit-crew" value="pit crew">
+            <label for="pit crew">Pit Crew</label>
+            <br>
+            <input type="radio" name="role" id="driver" value="driver">
+            <label for="driver">Driver</label>
+            <br>
+            <input type="radio" name="role" id="scout" value="scout">
+            <label for="scout">Scout</label>
+            <br>
+            <input type="radio" name="role" id="strategy" value="strategy">
+            <label for="strategy">Strategy</label>
+            <br>
+            <input type="radio" name="role" id="technician" value="technician">
+            <label for="technician">Technician</label>
+        </fieldset>
+        <textarea name="comments" id="comments" placeholder="Add your comments here..."></textarea>
+        <br>
+        <button type="button">Submit</button>
+    </form>
+  </body>
+</html>
